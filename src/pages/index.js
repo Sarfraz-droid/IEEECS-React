@@ -1,29 +1,48 @@
-import * as React from "react"
+import React,{useState,useEffect} from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import "../scss/Home.scss"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Helmet from "../components/helmet"
+import Navbar from "../components/Home/navbar"
+import Loading from "../components/Loading"
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+import Hero from "../components/Home/Hero"
+import AboutUs from "../components/Home/AboutUs"
+import OurTeam from "../components/Home/OurTeam"
+
+import BgHero from "../components/Home/Background/BgHero"
+import BgAboutUs from "../components/Home/Background/BgAbout"
+import BgOurTeam from "../components/Home/Background/BgOurTeam"
+
+import Mputer from "../images/Hero/MPUTER.svg"
+
+
+
+const IndexPage = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  }, []);
+  
+  return (
+  <div>
+   
+    {loading? <Loading />:null}
+      <Helmet />
+      <BgHero />
+      <Navbar />
+      <Hero />
+
+      <img className="mputer" src={Mputer}/>
+      <BgAboutUs />
+      <AboutUs />
+      <BgOurTeam />
+      <OurTeam />
+  </div>
+  )
+}
 
 export default IndexPage
