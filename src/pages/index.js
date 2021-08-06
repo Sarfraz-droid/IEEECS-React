@@ -9,6 +9,7 @@ import Loading from "../components/Loading"
 import Hero from "../components/Home/Hero"
 import AboutUs from "../components/Home/AboutUs"
 import OurTeam from "../components/Home/OurTeam"
+import ContactUs from "../components/Home/ContactUs"
 
 import BgHero from "../components/Home/Background/BgHero"
 import BgAboutUs from "../components/Home/Background/BgAbout"
@@ -16,7 +17,7 @@ import BgOurTeam from "../components/Home/Background/BgOurTeam"
 
 import Mputer from "../images/Hero/MPUTER.svg"
 
-
+import ScrollAnimation from "react-animate-on-scroll"
 
 const IndexPage = () => {
   const [loading, setLoading] = useState(true);
@@ -34,13 +35,18 @@ const IndexPage = () => {
       <Helmet />
       <BgHero />
       <Navbar />
+      <ScrollAnimation animateIn="fadeInDown">
       <Hero />
 
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInLeft">
       <img className="mputer" src={Mputer}/>
+      </ScrollAnimation>
       <BgAboutUs />
       <AboutUs />
       <BgOurTeam />
       <OurTeam />
+      <ContactUs />
   </div>
   )
 }

@@ -293,3 +293,135 @@ body {
   right: -300px;
   margin-top: 400px;
 }
+
+.contactUs{
+  text-align: center;
+  h1{
+    font-size: 3.5rem;
+    color: white;
+    .ContactBall{
+      width:3%;
+      margin: 0% 1%;
+      margin-bottom: -0.4%;
+    }
+
+    .ContactLine{
+      display: block;
+      width: 30%;
+      margin-left: 35%;
+      margin-top: -1.2%;
+    }
+  }
+  ul{
+    list-style: none;
+    li{
+      color: white;
+      margin-bottom: 7px;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  }
+
+  form{
+    margin-top: 5%;
+    margin-bottom:1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    .input_type{
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      width: 40%;
+      background-color: $orange;
+      border-radius: 25px 25px 0px 0px;
+      input{
+        width: 100%;
+        padding: 0.7%;
+        margin: 3% 0% 0% 0%;
+        padding-left: 8%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-weight: 600;
+
+      }
+      input:nth-child(2){
+        margin-bottom: 2%;
+      }
+      input:focus{
+        outline: none;
+      }
+      input::placeholder{
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.623);
+      }
+
+    }
+    .input_message{
+      width: 40%;
+      border-radius: 0px 0px 25px 25px;
+      background-color: white;
+
+      textarea{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        resize: none;
+        padding-left: 4%;
+        padding-top: 3%;
+        font-family: "Montserrat";
+        color: #e69f2d;
+        font-weight: 600;
+
+      }
+
+      textarea::placeholder{
+        font-weight: 600;
+        color: #e69f2d;
+      }
+
+      textarea:focus{
+        outline: none;
+      }
+
+      button{
+        float: right;
+        margin: 0% 4% 2% 0%;
+        padding: 2%;
+        background-color: transparent;
+        border: none;
+        color: $orange;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 10px;
+        transform: scale(1);
+        transition: all 0.5s;
+      }
+      button:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
+  .Social{
+    margin-left: 30%;
+    list-style: none;
+    display: flex;
+    padding: 0%;
+    li{
+      margin: 0% 2% 0% 0%;
+      a{
+        img{
+          filter: brightness(1);
+          transition: all 0.5s;
+        }
+        img:hover{
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}

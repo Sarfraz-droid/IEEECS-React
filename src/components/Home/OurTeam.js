@@ -5,14 +5,21 @@ import { Team } from "../../json/Team"
 import { StaticImage } from "gatsby-plugin-image"
 import LinkdIn from "../../images/TeamMembers/Linkedin.svg"
 
+import ScrollAnimation from "react-animate-on-scroll"
+
+
 function OurTeam() {
   return (
     <div className="Ourteam">
+      <ScrollAnimation animateIn="fadeInUp">
       <h1>Our Team</h1>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInDown">
       <p>
         “Coming together is a beginning. Keeping together is progress. Working
         together is success.”
       </p>
+      </ScrollAnimation>
 
       <div className="OurTeam-div">
         {Team.map((team, index) => {
