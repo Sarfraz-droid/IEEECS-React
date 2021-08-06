@@ -14,6 +14,7 @@ import Instagram from "../../images/ContactUs/SocialMediaIcon/instagram.svg"
 import Github from "../../images/ContactUs/SocialMediaIcon/github.svg"
 import Discord from "../../images/ContactUs/SocialMediaIcon/discord.svg"
 import WhatsApp from "../../images/ContactUs/SocialMediaIcon/whatsapp.svg"
+import LinkedIn from "../../images/ContactUs/SocialMediaIcon/ContactBall.svg"
 
 function ContactUs() {
   return (
@@ -64,6 +65,11 @@ function ContactUs() {
           <li>
               <a href="#"> 
                 <img src={Discord}/>
+              </a>
+          </li>
+          <li>
+              <a href="#"> 
+                <img src={LinkedIn}/>
               </a>
           </li>
       </ul>

@@ -10,6 +10,7 @@ import Hero from "../components/Home/Hero"
 import AboutUs from "../components/Home/AboutUs"
 import OurTeam from "../components/Home/OurTeam"
 import ContactUs from "../components/Home/ContactUs"
+import Footer from "../components/Home/Footer"
 
 import BgHero from "../components/Home/Background/BgHero"
 import BgAboutUs from "../components/Home/Background/BgAbout"
@@ -47,6 +48,7 @@ const IndexPage = () => {
       <BgOurTeam />
       <OurTeam />
       <ContactUs />
+      <Footer />
   </div>
   )
 }
