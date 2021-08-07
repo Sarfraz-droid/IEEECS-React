@@ -16,8 +16,8 @@ function BgAbout() {
         <div>
             <Svg src={FillArc} top = {840} left={500} rotate="0" scale="1"/>
 
-            <Svg src={Triangle}  top = {740} left={500} rotate="30" scale="1"/>
-            <Svg src={Triangle}  top = {770} right={200} rotate="-60" scale="0.5"/>
+            <Svg src={Triangle}  top = {740} left={500} rotate="30" scale="1" />
+            <Svg src={Triangle}  top = {770} right={200} rotate="-60" scale="0.5" mscale="0.5" mrotate="0"/>
             <Svg src={Triangle}  top = {1470} right={700} rotate="-45" scale="0.7"/>
 
             <Svg src={ZigZag} mdisplay="none"  top = {920} right={150} rotate="-10" scale="1"/>

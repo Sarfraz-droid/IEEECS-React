@@ -343,17 +343,21 @@ body {
         padding: 0.7%;
         margin: 3% 0% 0% 0%;
         padding-left: 8%;
-        background-color: transparent;
+        background-color: transparent!important;
         border: none;
-        color: white;
+        color: white!important;
         font-weight: 600;
-
+        appearance: none!important;
       }
+
       input:nth-child(2){
         margin-bottom: 2%;
       }
       input:focus{
         outline: none;
+        background-color: transparent!important;
+        color: white!important;
+
       }
       input::placeholder{
         font-weight: 600;
@@ -390,7 +394,7 @@ body {
 
       button{
         float: right;
-        margin: 0% 4% 2% 0%;
+        margin: 0% 4% 5% 0%;
         padding: 2%;
         background-color: transparent;
         border: none;
@@ -403,6 +407,12 @@ body {
       }
       button:hover{
         transform: scale(1.2);
+      }
+      p{
+        float: left;
+        margin: 4% 0% 2% 4%;
+        color:rgba(129, 129, 129, 0.623);
+        font-weight: 600;
       }
     }
   }

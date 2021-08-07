@@ -40,7 +40,7 @@ const IndexPage = () => {
    
     {loading? <Loading />:null}
       <Helmet />
-      {isTabletOrMobile? null: <BgHero />}
+      <BgHero />
       {isTabletOrMobile? <Hamburger/> : <Navbar />}
       <ScrollAnimation animateIn="fadeInDown">
       <Hero />
@@ -49,7 +49,7 @@ const IndexPage = () => {
       <ScrollAnimation animateIn="fadeInLeft">
       <img className="mputer" src={Mputer}/>
       </ScrollAnimation>
-      {isTabletOrMobile? null:<BgAboutUs />}
+      <BgAboutUs />
       <AboutUs />
       {isTabletOrMobile? null:<BgOurTeam />}
       <OurTeam />

@@ -18,15 +18,15 @@ function BgHero() {
             <Svg src={HolloCircle} bottom="90px" right="350px" rotate="0" scale="0.5" />
 
             <Svg src={ZigZag} top="20px" left="-30px" rotate="0" scale="0.8" />
-            <Svg src={ZigZag} top="-19px" left="700px" rotate="-25" scale="1" />
+            <Svg src={ZigZag} top="-19px" left="700px" rotate="-25" scale="1" mleft="200px" mscale="0.5" mrotate="30"/>
             <Svg src={ZigZag} bottom="60px" left="430px" rotate="-15" scale="0.8" />
 
-            <Svg src={Triangle} top="120px" left="100px" rotate="45" scale="1" />
+            <Svg src={Triangle} top="120px" left="100px" rotate="15" scale="1" mtop="70px" mscale="0.5" mrotate="30"/>
             <Svg src={Triangle} top="180px" right="350px" rotate="45" scale="1" />
-            <Svg src={Triangle} top="40px" right="690px" rotate="45" scale="1" />
+            <Svg src={Triangle} top="40px" right="690px" rotate="45" scale="1" mright="30px"/>
             <Svg src={Triangle} bottom="75px" left="410px" rotate="-15" scale="0.8" opacity="0.6" />
 
-            <Svg src={CutCircle} bottom="250px" right="600px" rotate="0" scale="1" />
+            <Svg src={CutCircle} bottom="250px" right="600px" rotate="0" scale="1" mright={30} mtop={1050}/>
 
         </React.Fragment>
     )
