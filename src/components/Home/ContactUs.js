@@ -4,7 +4,6 @@ import ContactBall from "../../images/ContactUs/ContactBall.svg"
 import ContactBall2 from "../../images/ContactUs/ContactBall2.svg"
 import Wire from "../../images/ContactUs/ContactWire.svg"
 import Line from "../../images/ContactUs/ContactLine.svg"
-import Form from "../../images/ContactUs/ContactUsForm.svg"
 
 import emailjs from "emailjs-com"
 
@@ -17,7 +16,7 @@ import Discord from "../../images/ContactUs/SocialMediaIcon/discord.svg"
 import WhatsApp from "../../images/ContactUs/SocialMediaIcon/whatsapp.svg"
 import LinkedIn from "../../images/ContactUs/SocialMediaIcon/ContactBall.svg"
 
-import creds from "../../json/creds.json";
+import {Creds} from "../../json/creds";
 
 function ContactUs() {
   
@@ -27,7 +26,7 @@ function ContactUs() {
 
     setmsg("Sending email...");
 
-    emailjs.sendForm(creds.service, creds.tempid, e.target, creds.userid)
+    emailjs.sendForm(Creds.service, Creds.tempid, e.target, Creds.userid)
       .then((result) => {
         setmsg("Email sent!");
         setTimeout(() => {
@@ -40,7 +39,8 @@ function ContactUs() {
       });
   }
   return (
-    <div className="contactUs">
+    <React.Fragment >
+      <div className="contactUs">
       <ScrollAnimation animateIn="fadeIn">
         <h1>
           <img className="ContactBall" src={ContactBall} />
@@ -99,7 +99,8 @@ function ContactUs() {
               </a>
           </li>
       </ul>
-    </div>
+      </div>
+    </React.Fragment>
   )
 }
 

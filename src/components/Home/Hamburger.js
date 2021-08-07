@@ -19,7 +19,8 @@ function Hamburger() {
     }
 
     return (
-        <div className="hamburger">
+        <React.Fragment >
+            <div className="hamburger">
             <img className="icon" src={HamburgerIcon} onClick={() => setClicked(!Clicked)} />
             <div className="dark_bg" style={style.Dark} onClick={() => setClicked(false)}/>
             <div className="Menu" style={style.Menu}>
@@ -33,7 +34,8 @@ function Hamburger() {
                     </li>
                 </ul>
             </div>
-        </div>
+            </div>
+        </React.Fragment>
     )
 }
 

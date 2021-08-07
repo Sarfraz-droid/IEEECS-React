@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from "react"
-import { Link } from "gatsby"
 import "../scss/Home.scss"
 import "../scss/Home_Table.scss"
 
@@ -24,23 +23,23 @@ import ScrollAnimation from "react-animate-on-scroll"
 
 import { useMediaQuery } from 'react-responsive'
 
+import { useBreakpoint } from 'gatsby-plugin-breakpoints';
+
 
 const IndexPage = () => {
   const [loading, setLoading] = useState(true);
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const breakpoints = useBreakpoint();
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
+
   }, []);
   
   return (
   <div>
    
-      {loading? <Loading />:null}
+      {/* {loading? <Loading />:null} */}
       <Helmet />
       <BgHero />
-      {isTabletOrMobile? <Hamburger/> : <Navbar />}
+      {breakpoints.md? <Hamburger/> : <Navbar />}
       <ScrollAnimation animateIn="fadeInDown">
       <Hero />
 
@@ -50,7 +49,7 @@ const IndexPage = () => {
       </ScrollAnimation>
       <BgAboutUs />
       <AboutUs />
-      {isTabletOrMobile? null:<BgOurTeam />}
+      {breakpoints.md? null:<BgOurTeam />}
       <OurTeam />
       <ContactUs />
       <Footer />

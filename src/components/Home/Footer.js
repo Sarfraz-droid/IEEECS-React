@@ -9,7 +9,8 @@ import Github from "../../images/Footer/SocialMedia/github.svg"
 
 function Footer() {
   return (
-    <div className="Footer">
+    <React.Fragment >
+      <div className="Footer">
       <h5>IEEE Computer Society Jamia Millia Islamia</h5>
       <ul className="Footer-list">
         <li>
@@ -53,7 +54,8 @@ function Footer() {
           </ul>
         </li>
       </ul>
-    </div>
+      </div>
+    </React.Fragment>
   )
 }
 
