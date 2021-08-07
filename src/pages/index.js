@@ -31,7 +31,6 @@ const IndexPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-      setisTableOrMobile(useMediaQuery({ query: '(max-width: 1224px)' }))
     }, 500);
   }, []);
   
@@ -41,7 +40,7 @@ const IndexPage = () => {
     {loading? <Loading />:null}
       <Helmet />
       <BgHero />
-      {isTabletOrMobile? <Hamburger/> : <Navbar />}
+      {isTableOrMobile? <Hamburger/> : <Navbar />}
       <ScrollAnimation animateIn="fadeInDown">
       <Hero />
 
@@ -51,7 +50,7 @@ const IndexPage = () => {
       </ScrollAnimation>
       <BgAboutUs />
       <AboutUs />
-      {isTabletOrMobile? null:<BgOurTeam />}
+      {isTableOrMobile? null:<BgOurTeam />}
       <OurTeam />
       <ContactUs />
       <Footer />
