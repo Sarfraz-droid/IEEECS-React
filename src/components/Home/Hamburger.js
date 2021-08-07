@@ -7,7 +7,7 @@ import Cross from "../../images/OnMenuCross.svg"
 
 function Hamburger() {
 
-    const [Clicked, setClicked] = useState(false)
+    const [Clicked, setClicked] = useState(false);
 
     const style={
         Dark:{

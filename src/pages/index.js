@@ -27,13 +27,13 @@ import { useMediaQuery } from 'react-responsive'
 
 const IndexPage = () => {
   const [loading, setLoading] = useState(true);
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 500);
   }, []);
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   
   return (
   <div>
