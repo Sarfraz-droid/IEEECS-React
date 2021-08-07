@@ -3,7 +3,6 @@ import React from "react"
 import Bg from "../../images/Hero/Hero-TopLeftCover.svg"
 import Logo from "../../images/Hero/IEEE CS Logo.png"
 
-import ScrollAnimation from "react-animate-on-scroll"
 
 function navbar() {
   return (
