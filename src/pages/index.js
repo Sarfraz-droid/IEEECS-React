@@ -21,8 +21,6 @@ import Mputer from "../images/Hero/MPUTER.svg"
 
 import ScrollAnimation from "react-animate-on-scroll"
 
-import { useMediaQuery } from 'react-responsive'
-
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 
 
