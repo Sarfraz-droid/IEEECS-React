@@ -57,7 +57,7 @@ function ContactUs() {
       </ul>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp">
-      <form autoComplete="none" onSubmit={sendEmail}>
+      <form autoComplete="none">
           <div className="input_type">
               <input type="text" className="Name" placeholder="Name" autoComplete="none" name="ieee_name" aria-autocomplete="off"/>
               <input type="text" className="Name" placeholder="Email" autoComplete="none" name="ieee_email"/>
