@@ -5,6 +5,7 @@ function helmet() {
   return (
     <Helmet>
       <title>IEEE CS JMI</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link

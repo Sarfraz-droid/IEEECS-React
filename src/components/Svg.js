@@ -19,6 +19,7 @@ function Svg(prop) {
     };
 
     const mediastyles = {
+        display: prop.mdisplay ? prop.mdisplay : 'auto',
         position: prop.mpositions ? prop.mpositions : 'absolute',
         top: prop.mtop?prop.mtop:prop.top?prop.top:'auto',
         left: prop.mleft?prop.mleft:prop.left?prop.left:'auto',

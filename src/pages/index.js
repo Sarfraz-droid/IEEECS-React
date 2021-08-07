@@ -1,10 +1,12 @@
 import React,{useState,useEffect} from "react"
 import { Link } from "gatsby"
 import "../scss/Home.scss"
+import "../scss/Home_Table.scss"
 
 import Helmet from "../components/helmet"
 import Navbar from "../components/Home/navbar"
 import Loading from "../components/Loading"
+import Hamburger from "../components/Home/Hamburger"
 
 import Hero from "../components/Home/Hero"
 import AboutUs from "../components/Home/AboutUs"
@@ -20,6 +22,9 @@ import Mputer from "../images/Hero/MPUTER.svg"
 
 import ScrollAnimation from "react-animate-on-scroll"
 
+import { useMediaQuery } from 'react-responsive'
+
+
 const IndexPage = () => {
   const [loading, setLoading] = useState(true);
 
@@ -28,6 +33,7 @@ const IndexPage = () => {
       setLoading(false);
     }, 500);
   }, []);
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   
   return (
   <div>
@@ -35,7 +41,7 @@ const IndexPage = () => {
     {loading? <Loading />:null}
       <Helmet />
       <BgHero />
-      <Navbar />
+      {isTabletOrMobile? <Hamburger/> : <Navbar />}
       <ScrollAnimation animateIn="fadeInDown">
       <Hero />
 

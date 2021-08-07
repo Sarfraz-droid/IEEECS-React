@@ -21,8 +21,8 @@ function BgOurTeam() {
 
     return (
         <React.Fragment>
-            <ScrollAnimation style={{position: 'absolute',right: 100}} animateIn="fadeIn" >
-                <img src={OurTeamGraphic} right={100} marginTop={20}/>
+            <ScrollAnimation className="Bg-ourTeamGraphic" style={{position: 'absolute',right: 100}} animateIn="fadeIn" >
+                <img  src={OurTeamGraphic} right={100} marginTop={20}/>
             </ScrollAnimation>
             <ScrollAnimation className="BgOut-OT-1" animateIn="fadeInRight" animateOut="fadeOutRight">
                 <img src={OT_2} />
