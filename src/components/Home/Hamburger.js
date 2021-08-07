@@ -12,7 +12,6 @@ function Hamburger() {
     const style={
         Dark:{
             backgroundColor: Clicked? 'rgba(0, 0, 0, .60)' : 'rgba(0, 0, 0, 0)',
-            // display: Clicked ? 'block' : 'none',
         },
         Menu:{
             left: Clicked? 0 : '-50%',
