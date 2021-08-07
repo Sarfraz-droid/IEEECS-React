@@ -2,7 +2,6 @@ import React from "react"
 
 import { Team } from "../../json/Team"
 
-import { StaticImage } from "gatsby-plugin-image"
 import LinkdIn from "../../images/TeamMembers/Linkedin.svg"
 
 import ScrollAnimation from "react-animate-on-scroll"

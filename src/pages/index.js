@@ -27,7 +27,7 @@ import { useMediaQuery } from 'react-responsive'
 
 const IndexPage = () => {
   const [loading, setLoading] = useState(true);
-  const [isTableOrMobile, setisTableOrMobile] = useState(useMediaQuery({ query: '(max-width: 1224px)' }))
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -40,7 +40,7 @@ const IndexPage = () => {
     {loading? <Loading />:null}
       <Helmet />
       <BgHero />
-      {isTableOrMobile? <Hamburger/> : <Navbar />}
+      {isTabletOrMobile? <Hamburger/> : <Navbar />}
       <ScrollAnimation animateIn="fadeInDown">
       <Hero />
 
@@ -50,7 +50,7 @@ const IndexPage = () => {
       </ScrollAnimation>
       <BgAboutUs />
       <AboutUs />
-      {isTableOrMobile? null:<BgOurTeam />}
+      {isTabletOrMobile? null:<BgOurTeam />}
       <OurTeam />
       <ContactUs />
       <Footer />
