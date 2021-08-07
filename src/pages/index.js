@@ -37,7 +37,7 @@ const IndexPage = () => {
   return (
   <div>
    
-    {loading? <Loading />:null}
+      {loading? <Loading />:null}
       <Helmet />
       <BgHero />
       {isTabletOrMobile? <Hamburger/> : <Navbar />}
