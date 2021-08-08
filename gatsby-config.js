@@ -8,6 +8,19 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    'gatsby-plugin-breakpoints'
+    'gatsby-plugin-breakpoints',
+    `gatsby-plugin-preact`,
+    `gatsby-plugin-remove-fingerprints`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        purgeCSSOptions: {
+          // https://purgecss.com/configuration.html#options
+          // safelist: ['safelist'], // Don't remove this selector
+        },
+      },
+    },
+
   ],
 }
