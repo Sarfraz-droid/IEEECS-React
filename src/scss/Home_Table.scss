@@ -1,5 +1,7 @@
 $media-tablet: "only screen and (max-width : 1224px)";
 
+// IEEE CS JMI BEST
+
 @media #{$media-tablet} {
     .body{
         overflow-x: hidden;

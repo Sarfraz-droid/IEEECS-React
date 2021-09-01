@@ -1,0 +1,12 @@
+diff --git a/src/scss/Home_Table.scss b/src/scss/Home_Table.scss
+--- src/scss/Home_Table.scss
++++ src/scss/Home_Table.scss
+@@ -1,6 +1,8 @@
+ $media-tablet: "only screen and (max-width : 1224px)";
+ 
++// IEEE CS JMI BEST
++
+ @media #{$media-tablet} {
+     .body{
+         overflow-x: hidden;
+         width:100%;
